@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schuldi</title>
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap"
+            rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="day-mode">
+
+<header>
+    <h1><a class="menu-link" href="index.html">Schuldi</a></h1>
+    <!-- Hamburger Menü-Button -->
+    <button class="menu-toggle" aria-label="Menü öffnen">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+    </button>
+</header>
+
+    <nav class="dropdown-nav" id="dropdownNav">
+     <div class="menu-container">
+        <div class="menu-item">
+            <a href="index.html" class="menu-link">Startseite</a>
+        </div>
+        <div class="menu-item">
+            <a href="staatsschulden.html" class="menu-link">Was sind Staatsschulden?</a>
+        </div>
+        <div class="menu-item">
+            <a href="schuldenbremse.html" class="menu-link">Die Schuldenbremse</a>
+        </div>
+        <div class="menu-item">
+            <a href="ausgabensposten.html" class="menu-link">Ausgabensposten</a>
+        </div>
+     </div>
+    </nav>
+
+<main>
+    <div class="wiese-container">
+        <img
+                src="images/sun.png"
+                alt="Sonne"
+                id="sun"
+                class="sun-moon"
+                onclick="toggleDayNight()"
+        />
+        <img
+                src="images/moon.png"
+                alt="Mond"
+                id="moon"
+                class="sun-moon"
+                onclick="toggleDayNight()"
+        />
+        <img
+                src="images/schuldi.gif"
+                alt="-10 Euro Geldschein"
+                id="schuldi"
+                class="schuldi-masko"
+        />
+        <div class="clouds" style="top: 30px; animation-duration: 70s"></div>
+        <div class="clouds" style="top: 80px; animation-duration: 60s"></div>
+        <div class="clouds" style="top: 120px; animation-duration: 90s"></div>
+
+        <div class="birds"></div>
+
+        <div class="grashalm" style="left: 10%; animation-delay: 0.5s"></div>
+        <div class="grashalm" style="left: 20%"></div>
+        <div class="grashalm" style="left: 30%; animation-delay: 1s"></div>
+        <div class="grashalm" style="left: 40%; animation-delay: 2s"></div>
+        <div class="grashalm" style="left: 50%"></div>
+        <div class="grashalm" style="left: 60%; animation-delay: 2s"></div>
+        <div class="grashalm" style="left: 70%; animation-delay: 2s"></div>
+        <div class="grashalm" style="left: 80%; animation-delay: 1s"></div>
+        <div class="grashalm" style="left: 90%; animation-delay: 0.5s"></div>
+
+    </div>
+
+    <section id="intro" class="content-section">
+        <h2>Hallo liebe minderjährigen Menschen der Welt 👋</h2>
+        <p>Ich bins Schuldi. Der lustige Minus-Geldschein :D</p>
+    </section>
+
+    <section id="warum-wichtig" class="content-section">
+        <iframe class="iframe" src="staatsschulden.html" width="100%" height="500"></iframe>
+    </section>
+
+    <section id="spiel-quiz" class="content-section">
+        <h2>Virusdownload</h2>
+        <p>Downloade hier ein cooles Virus</p>
+        <pre>
+            :3
+        </pre>
+        <a href="quellen.pdf" download="quellen.pdf">
+            <button class="button">Datei herunterladen</button>
+        </a>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 EconME</p>
+    <nav>
+        <a href="impressum.html">Impressum</a>
+    </nav>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

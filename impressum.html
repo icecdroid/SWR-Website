@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schuldi</title>
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap"
+            rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="day-mode">
+
+<header>
+    <h1><a style="align-content: flex-start" class="menu-link" href="index.html">🔙</a></h1>
+
+    <main>
+        <div class="wiese-container">
+            <img
+                    src="images/sun.png"
+                    alt="Sonne"
+                    id="sun"
+                    class="sun-moon"
+                    onclick="toggleDayNight()"
+            />
+            <img
+                    src="images/moon.png"
+                    alt="Mond"
+                    id="moon"
+                    class="sun-moon"
+                    onclick="toggleDayNight()"
+            />
+            <img
+                    src="images/schuldi.gif"
+                    alt="-10 Euro Geldschein"
+                    id="schuldi"
+                    class="schuldi-masko"
+            />
+            <div class="clouds" style="top: 30px; animation-duration: 70s"></div>
+            <div class="clouds" style="top: 80px; animation-duration: 60s"></div>
+            <div class="clouds" style="top: 120px; animation-duration: 90s"></div>
+
+            <div class="birds"></div>
+
+            <div class="grashalm" style="left: 10%; animation-delay: 0.5s"></div>
+            <div class="grashalm" style="left: 20%"></div>
+            <div class="grashalm" style="left: 30%; animation-delay: 1s"></div>
+            <div class="grashalm" style="left: 40%; animation-delay: 2s"></div>
+            <div class="grashalm" style="left: 50%"></div>
+            <div class="grashalm" style="left: 60%; animation-delay: 2s"></div>
+            <div class="grashalm" style="left: 70%; animation-delay: 2s"></div>
+            <div class="grashalm" style="left: 80%; animation-delay: 1s"></div>
+            <div class="grashalm" style="left: 90%; animation-delay: 0.5s"></div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 EconME</p>
+        <nav>
+            <a href="impressum.html">Impressum</a>
+        </nav>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
